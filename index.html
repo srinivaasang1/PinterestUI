@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pinterest UI</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background: #E9E9E9;
+        }
+        #blog-landing {
+            margin-top: 81px;
+            position: relative;
+            max-width: 100%;
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+        .white-panel {
+            position: absolute;
+            background: white;
+            box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+            padding: 10px;
+        }
+        .white-panel h1 {
+            font-size: 1em;
+        }
+        .white-panel h1 a {
+            color: #A92733;
+        }
+        .white-panel:hover {
+            box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+            margin-top: -5px;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+<h1 style="margin-top:30px" align="center">Pinterest User Interface</h1>
+<div class="container marketing">
+    <section id="blog-landing">
+        <article class="white-panel"> <img src="img/img1.jpg" alt="ALT">
+            <h1><a href="http://www.crazyleafdesign.com/blog/exclusive-freebie-ink-doodles-ocean-lovers/">Exclusive Freebie: Ink Doodles for Ocean Lovers</a></h1>
+            <p>Have your dose of vitamin sea with these exclusive Crazyleaf freebies from Freepik.com. </p>
+        </article>
+        <article class="white-panel"> <img src="img/img2.jpg" alt="ALT">
+            <h1><a href="http://www.crazyleafdesign.com/blog/brief-history-web-design-trends/">A Brief History of Web Design Trends</a></h1>
+            <p>A growing number of entrepreneurs are now beginning to discover the importance of having good web design. The Behaviour and Information Technology Journal published a research saying that users tend.../p>
+        </article>
+        <article class="white-panel"> <img src="img/img3.jpg" alt="ALT">
+            <h1><a href="http://www.crazyleafdesign.com/blog/best-boutique-logo-designs/">12 Best Boutique Logo Designs – Inspiration</a></h1>
+            <p>We scoured the web for the best boutique logo designs. If you are looking atOne of the first steps in starting an online boutique is getting a logo. If you...</p>
+        </article>
+        <article class="white-panel"> <img src="img/img4.jpg" alt="ALT">
+            <h1><a href="http://www.crazyleafdesign.com/blog/wom-providence-food-app/">Designing WoM a New Food Discovery App for Providence RI</a></h1>
+            <p>We’re excited to feature WoM a new app that helps you find the best bars and restaurants using a new social search model. The mobile app WoM is set to launch...</p>
+        </article>
+        <article class="white-panel"> <img src="img/img5.jpg" alt="ALT">
+            <h1><a href="http://www.crazyleafdesign.com/blog/5-things-to-consider-before-building-your-first-website/">5 Things To Consider Before Building Your First Website</a></h1>
+            <p>In the competitive business environment of today, a website could mean the difference between growth and decline of your venture. “Building” a website might seem like a huge technical ordeal,...</p>
+        </article>
+        <article class="white-panel"> <img src="img/img6.jpg" alt="ALT">
+            <h1><a href="http://www.crazyleafdesign.com/blog/are-your-websites-images-telling-the-wrong-story/">Are Your Website’s Images Telling the Wrong Story?</a></h1>
+            <p>We’ve all heard the clichés about photographs: A picture is worth a thousand words, every picture tells a story, and so on and so forth. And while the words themselves...</p>
+        </article>
+        <article class="white-panel"> <img src="img/img7.jpg" alt="ALT">
+            <h1><a href="http://www.crazyleafdesign.com/blog/adobe-experience-design-launched-sketch-competitor/">Adobe Experience Design is Launched as Sketch Competitor</a></h1>
+            <p>Sketch has been quickly growing support as the defacto choice for website and user interface design. Released late in 2010 it has continued to enjoy updates and a growing user...</p>
+        </article>
+        <article class="white-panel"> <img src="img/img8.jpg" alt="ALT">
+            <h1><a href="http://www.crazyleafdesign.com/blog/12-must-read-books-for-highly-creative-and-ambitious-people/">12 Must Read Books For Creative and Highly Ambitious People</a></h1>
+            <p>As creative individuals we fantasize everyday about leaving our mark on this Earth when we checkout. It’s not an easy feat to accomplish, but we aspire in our own little... </p>
+        </article>
+        <article class="white-panel"> <img src="img/img9.jpg" alt="ALT">
+            <h1><a href="http://www.crazyleafdesign.com/blog/6-collaborative-tools-to-increase-visual-communication-and-productivity/">6 Collaborative Tools to Increase Visual Communication and Productivity</a></h1>
+            <p>Design is a collaborative process and very rare do we as designers create alone. For most of us who are lucky to work in a supportive and a creative environment,...</p>
+        </article>
+        <article class="white-panel"> <img src="img/img10.jpg" alt="ALT">
+            <h1><a href="http://www.crazyleafdesign.com/blog/potent-effective-web-design-principals-for-2016/">9 Potent & Effective Web Design Principals for 2016</a></h1>
+            <p>We are nearly at the close of another year and as 2016 looms closely in the background we wanted to look at how design principals will change. For web developers...</p>
+        </article>
+    </section>
+</div>
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="js/pinterest_grid.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#blog-landing').pinterest_grid({
+            no_columns: 4,
+            padding_x: 10,
+            padding_y: 10,
+            margin_bottom: 50,
+            single_column_breakpoint: 700
+        });
+
+    });
+</script>
+</body>
+</html>
