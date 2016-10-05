@@ -1,13 +1,12 @@
 {
-    "name": "Ang_SC",
+    "name": "PinterestUI",
     "authors": [
         "srini"
     ],
     "description": "",
     "main": "",
-    "license": "MIT",
     "homepage": "index.html",
-    "private": true,
+    "private": false,
     "ignore": [
         "**/.*",
         "node_modules",
